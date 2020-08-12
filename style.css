@@ -1,0 +1,192 @@
+img {
+  width: 100%;
+}
+.container {
+  padding:0 25px;
+}
+nav {
+  border-bottom: 1px solid white;
+  background-color: #1B1310;
+}
+.navbar-collapse {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+.navbar-collapse li {
+  margin-bottom: 50px;
+}
+header {
+  background-image: url(img/fv-bgi_sp@2x.jpg);
+  min-height: 590px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.h-t {
+  color: white;
+  border: solid 1px white;
+  font-size: 30px;
+  padding: 20px 30px;
+  letter-spacing:5px
+}
+.h-1 {
+  font-family: 'Roboto', sans-serif;
+}
+.h-2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  line-height:0.6;
+  margin-top: 150px;
+  text-align: center;
+}
+.h-3 {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+  line-height: 2;
+  margin-top: 75px;
+}
+.p {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  line-height: 2;
+  margin-top: 34px;
+}
+/* バーガーメニュー */
+.burger-btn{
+  display: block;
+  width: 39px;
+  height: 39px;
+  position: relative;
+  z-index: 3;
+/*   codepenの挙動のため */
+background-color:transparent;
+border:none;
+}
+.bar{
+  width: 20px;
+  height: 1px;
+  display: block;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+}
+.bar_top{
+  top: 10px;
+}
+.bar_mid{
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+.bar_bottom{
+  bottom: 10px;
+}
+.burger-btn.close .bar_top{
+  transform: translate(-50%,10px) rotate(45deg);
+  transition: transform .3s;
+}
+.burger-btn.close .bar_mid{
+  opacity: 0;
+  transition: opacity .3s;
+}
+.burger-btn.close .bar_bottom{
+  transform: translate(-50%,-8px) rotate(-45deg);
+  transition: transform .3s;
+}
+/* ------------------ */
+.service img {
+  margin-top: 40px;
+}
+.card-deck {
+  margin-top: 70px;
+}
+.card-deck .card {
+  margin-bottom: 50px;
+}
+.card-body {
+  padding: 30px ;
+}
+.card-text {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.05em;
+  line-height: 2;
+  font-weight: bolder;  
+}
+.contact .h-2 {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  letter-spacing: 0.1em;
+  letter-spacing: 2;
+  text-align: center;
+  margin-top: 160px;
+  margin-bottom: 100px;
+}
+.btn-1 {
+  display: block;
+  width: 235px;
+  height: 60px;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 20px;
+  letter-spacing: 0.05em;
+  line-height: 1.5;
+  margin: 50px auto;
+  color: white;
+  background-color: #1B1310;
+  border-radius: 51px;
+}
+footer {
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.05em;
+  line-height: 2;
+  font-size: 14px;
+}
+
+@media(min-width:1400px) {
+  .navbar-collapse {
+    padding: 0;
+  }
+  .navbar-collapse li {
+    margin-bottom: 0;
+    margin-left: 50px;
+  }
+  header {
+    background-image: url(img/fv-bgi@2x.jpg);
+    background-position: bottom;
+    min-height: 740px;
+  }
+  .navbar {
+    padding:0 120px;
+    height: 75px;
+  }
+  .container {
+    max-width: 1030px;
+  }
+  .h-3 {
+    font-size: 24px;
+  }
+  .service .row {
+    margin-top: 70px;
+  } 
+  .service .h-3 {
+    margin-top: 0;
+  }
+  .service img {
+    margin-top: 0;
+    width: 480px;
+  }
+  .contact {
+    width: 700px;
+    margin: auto auto;
+  }
+}
